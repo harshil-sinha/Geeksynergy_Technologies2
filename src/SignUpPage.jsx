@@ -41,49 +41,63 @@ const SignUpPage = () => {
     return (
         <>
             <MDBContainer fluid>
+                <MDBRow className='justify-content-center align-items-center vh-100'>
+                    <MDBCol col='10' md='6'>
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="img-fluid" alt="Sample image" />
+                    </MDBCol>
+                    <MDBCol col='10' md='6'>
+                        <MDBCard className='p-5 shadow-5'>
+                            <MDBCardBody className='p-5 text-center'>
 
-                <div className="p-5 bg-image" style={{ backgroundImage: 'url(https://mdbootstrap.com/img/new/textures/full/171.jpg)', height: '300px' }}></div>
+                                <h2 className="fw-bold mb-5">Sign up now</h2>
 
-                <MDBCard className='mx-5 mb-5 p-5 shadow-5' style={{ marginTop: '-100px', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)' }}>
-                    <MDBCardBody className='p-5 text-center'>
+                                <MDBRow className='mb-4'>
+                                    <MDBCol>
+                                        <MDBInput label='Name' id='form1' type='text' name="name" onChange={handleChange} />
+                                    </MDBCol>
+                                </MDBRow>
 
-                        <h2 className="fw-bold mb-5">Sign up now</h2>
+                                <MDBRow className='mb-4'>
+                                    <MDBCol>
+                                        <MDBInput label='Email' id='form1' type='email' name="email" onChange={handleChange} />
+                                    </MDBCol>
+                                </MDBRow>
 
-                        <MDBRow>
-                            <MDBCol col='6'>
-                                <MDBInput wrapperClass='mb-4' label='Name' id='form1' type='text' name="name" onChange={handleChange} />
-                            </MDBCol>
-                        </MDBRow>
+                                <MDBRow className='mb-4'>
+                                    <MDBCol>
+                                        <MDBInput label='Password' id='form1' type='password' name="password" onChange={handleChange} />
+                                    </MDBCol>
+                                </MDBRow>
 
-                        <MDBInput wrapperClass='mb-4' label='Email' id='form1' type='email' name="email" onChange={handleChange} />
-                        <MDBInput wrapperClass='mb-4' label='Password' id='form1' type='password' name="password" onChange={handleChange} />
-                        <MDBInput wrapperClass='mb-4' label='Mobile' id='form1' type='number' name="phoneNumber" onChange={handleChange} />
+                                <MDBRow className='mb-4'>
+                                    <MDBCol>
+                                        <MDBInput label='Mobile' id='form1' type='number' name="phoneNumber" onChange={handleChange} />
+                                    </MDBCol>
+                                </MDBRow>
 
-                        <select name="profession" onChange={handleChange}>
-                            <option value="">Select Profession</option>
-                            <option value="developer">Developer</option>
-                            <option value="designer">Designer</option>
-                            <option value="manager">Manager</option>
-                        </select>
-                        <MDBBtn className='w-100 mt-4' size='md' onClick={handleSubmit}>sign up</MDBBtn>
-                    </MDBCardBody>
-                </MDBCard>
+                                <MDBRow className='mb-4'>
+                                    <MDBCol>
+                                        <select className='form-select' name="profession" onChange={handleChange}>
+                                            <option value="">Select Profession</option>
+                                            <option value="developer">Developer</option>
+                                            <option value="designer">Designer</option>
+                                            <option value="manager">Manager</option>
+                                        </select>
+                                    </MDBCol>
+                                </MDBRow>
 
+                                <MDBRow>
+                                    <MDBCol>
+                                        <MDBBtn className='w-100 mt-4' size='md' onClick={handleSubmit}>sign up</MDBBtn>
+                                    </MDBCol>
+                                </MDBRow>
+
+                            </MDBCardBody>
+                        </MDBCard>
+                    </MDBCol>
+                </MDBRow>
             </MDBContainer>
         </>
-        /*<div>
-            <input type="text" name="name" placeholder="Name" onChange={handleChange} />
-            <input type="password" name="password" placeholder="Password" onChange={handleChange} />
-            <input type="email" name="email" placeholder="Email" onChange={handleChange} />
-            <input type="tel" name="phoneNumber" placeholder="Phone Number" onChange={handleChange} />
-            <select name="profession" onChange={handleChange}>
-                <option value="">Select Profession</option>
-                <option value="developer">Developer</option>
-                <option value="designer">Designer</option>
-                <option value="manager">Manager</option>
-            </select>
-            <button onClick={handleSubmit}>Submit</button>
-        </div>*/
     );
 };
 
