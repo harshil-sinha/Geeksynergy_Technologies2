@@ -1,0 +1,46 @@
+.containerr {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.company-info-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.company-info-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #331a86;
+}
+
+.company-info {
+    padding: 10px 0;
+}
+
+.company-info p {
+    margin: 5px 0;
+    color: seagreen;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #333;
+}
+.company-logo {
+    max-width: 200px; /* Set max width for the logo */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
